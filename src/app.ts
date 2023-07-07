@@ -11,7 +11,7 @@ const host = process.env.HOST;
 app.use(express.static('public'));
 app.use(express.json());
 
-app.use('/', (request: Request, response: Response) => {
+app.get('/', (request: Request, response: Response) => {
   response.send('HELLO WORLD!');
 });
 
